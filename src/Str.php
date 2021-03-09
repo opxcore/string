@@ -32,6 +32,19 @@ class Str
      * Is string starts with another string.
      *
      * @param string $string
+     * @param int $count
+     *
+     * @return  string|false
+     */
+    public static function cutFromStart(string $string, int $count)
+    {
+        return substr($string, $count);
+    }
+
+    /**
+     * Is string starts with another string.
+     *
+     * @param string $string
      * @param int $offset
      * @param int|null $length
      *
