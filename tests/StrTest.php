@@ -21,4 +21,11 @@ class StrTest extends TestCase
         self::assertTrue(Str::startsWith('some string', 'some'));
         self::assertFalse(Str::startsWith('some string', 'string'));
     }
+
+    public function testSubStr(): void
+    {
+        self::assertEquals('some', Str::substr('some string', 0, 4));
+        self::assertEquals('string', Str::substr('some string', 5));
+        self::assertEquals('me', Str::substr('some string', 2, 2));
+    }
 }
