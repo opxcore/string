@@ -15,7 +15,6 @@ use PHPUnit\Framework\TestCase;
 
 class StrTest extends TestCase
 {
-
     public function testStartsWith(): void
     {
         self::assertTrue(Str::startsWith('some string', 'some'));
